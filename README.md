@@ -73,8 +73,31 @@ la fotoresistencia tambien controla la velocidad del motor
       //si no sale del if
       else{digitalWrite(motor,1);};
     
+## cuarta parte
+### funcion principal
+ el interruptor deslizante de la parte dos tiene la función de encender y apagar el contador
 
-
+           if(digitalRead(interruptor)==0){
+          suma();
+          resta();
+          reset();
+            Serial.print(ds);
+          Serial.println(u);
+          
+          digitalWrite(unidad,1);
+          digitalWrite(decena,0);
+          digitos(ds);
+        
+          digitalWrite(decena,1);
+          digitalWrite(unidad,0);
+          digitos(u);
+          }
+          //si no entra el  mostrara solo los numeros primos
+          else{
+            //muestra los numeros primos en creciente
+           digitalWrite(unidad,1);
+            digitalWrite(decena,1);
+            };
 
 ## link del trabajo
 pirmera parte: https://www.tinkercad.com/things/8f7pu4yYX2E?sharecode=t6YECktDC6dDiiWf8S82LQhGSJ03Lmtc1FKahnBUcy0
@@ -82,4 +105,6 @@ pirmera parte: https://www.tinkercad.com/things/8f7pu4yYX2E?sharecode=t6YECktDC6
 segunda parte: https://www.tinkercad.com/things/gEgIvKoicBR
 
 tercera parte: https://www.tinkercad.com/things/eolZHC3UdOE
+
+cuarta parte: https://www.tinkercad.com/things/50FlgGFz3NV
 
